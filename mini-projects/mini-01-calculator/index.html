@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clock Around</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="app-header">
+            <div class="lock">
+
+                <div class="clock">
+                    <i class="fa-regular fa-clock logo-icon"></i>
+                </div>
+
+                <span class="lock-text">
+                    <span class="clock-word">Clock</span>Around
+                </span>
+
+            </div>
+        </header>
+
+        <section class="main-clock-section">
+
+            <div class="time-display-wrapper">
+                <h1 id="main-time" class="main-time">00:00:00</h1>
+            </div>
+
+            <div class="date-display" id="main-date"></div>
+
+        </section>
+
+        <section class="active-city-section">
+
+            <div class="city-icon-box">
+                <i class="fa-solid fa-earth-africa city-icon"></i>
+            </div>
+
+            <div class="active-city-info">
+                <h2 id="active-city-name">Cairo, Egypt</h2>
+
+                <p id="active-city-quote">
+                    The city of a thousand minarets
+                </p>
+            </div>
+
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="cities-grid" id="cities-grid">
+
+            <div class="city-card new_york" data-timezone="America/New_York">
+
+                <h4 class="city-card-header">
+                    <span>New York</span>
+                    <i class="fa-solid fa-city city-small-icon"></i>
+                </h4>
+
+                <p class="day-city"></p>
+                <p class="clock-city">00:00:00</p>
+
+            </div>
+
+            <div class="city-card london" data-timezone="Europe/London">
+
+                <h4 class="city-card-header">
+                    <span>London</span>
+                    <i class="fa-solid fa-landmark city-small-icon"></i>
+                </h4>
+
+                <p class="day-city"></p>
+                <p class="clock-city">00:00:00</p>
+
+            </div>
+
+            <div class="city-card cairo active" data-timezone="Africa/Cairo">
+
+                <h4 class="city-card-header">
+                    <span>Cairo</span>
+                    <i class="fa-solid fa-mosque city-small-icon"></i>
+                </h4>
+
+                <p class="day-city"></p>
+                <p class="clock-city">00:00:00</p>
+
+            </div>
+
+            <div class="city-card tehran" data-timezone="Asia/Tehran">
+
+                <h4 class="city-card-header">
+                    <span>Tehran</span>
+                    <i class="fa-solid fa-mountain-sun city-small-icon"></i>
+                </h4>
+
+                <p class="day-city"></p>
+                <p class="clock-city">00:00:00</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
